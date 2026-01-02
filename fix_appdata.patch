@@ -1,0 +1,51 @@
+From 91a09e2980be7cb17cb033b0b4b095b968118493 Mon Sep 17 00:00:00 2001
+From: =?UTF-8?q?Sabri=20=C3=9Cnal?= <yakushabb@gmail.com>
+Date: Tue, 23 Dec 2025 15:01:43 +0300
+Subject: [PATCH] Fix appdata papercuts
+
+---
+ inst/share/metainfo/com.agateau.nanonote.metainfo.xml | 8 ++++++--
+ src/linux/nanonote.metainfo.xml                       | 8 ++++++--
+ 2 files changed, 12 insertions(+), 4 deletions(-)
+
+diff --git a/inst/share/metainfo/com.agateau.nanonote.metainfo.xml b/inst/share/metainfo/com.agateau.nanonote.metainfo.xml
+index 66897dc..722fae3 100644
+--- a/inst/share/metainfo/com.agateau.nanonote.metainfo.xml
++++ b/inst/share/metainfo/com.agateau.nanonote.metainfo.xml
+@@ -20,9 +20,13 @@
+     <category>Utility</category>
+     <category>TextEditor</category>
+   </categories>
+-  <url type="homepage">https://agateau.com/projects/nanonote</url>
++  <developer id="com.agateau">
++    <name>Aurélien Gâteau</name>
++  </developer>
++  <url type="homepage">https://agateau.com/</url>
+   <url type="bugtracker">https://github.com/agateau/nanonote/issues</url>
+   <url type="donation">https://agateau.com/support</url>
++  <url type="vcs-browser">https://github.com/agateau/nanonote</url>
+   <launchable type="desktop-id">com.agateau.nanonote.desktop</launchable>
+   <releases>
+     <release version="1.4.1" date="2023-12-01">
+diff --git a/src/linux/nanonote.metainfo.xml b/src/linux/nanonote.metainfo.xml
+index 66897dc..722fae3 100644
+--- a/src/linux/nanonote.metainfo.xml
++++ b/src/linux/nanonote.metainfo.xml
+@@ -20,9 +20,13 @@
+     <category>Utility</category>
+     <category>TextEditor</category>
+   </categories>
+-  <url type="homepage">https://agateau.com/projects/nanonote</url>
++  <developer id="com.agateau">
++    <name>Aurélien Gâteau</name>
++  </developer>
++  <url type="homepage">https://agateau.com/</url>
+   <url type="bugtracker">https://github.com/agateau/nanonote/issues</url>
+   <url type="donation">https://agateau.com/support</url>
++  <url type="vcs-browser">https://github.com/agateau/nanonote</url>
+   <launchable type="desktop-id">com.agateau.nanonote.desktop</launchable>
+   <releases>
+     <release version="1.4.1" date="2023-12-01">
+-- 
+2.52.0
+
