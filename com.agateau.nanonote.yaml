@@ -1,6 +1,6 @@
 app-id: com.agateau.nanonote
 runtime: org.kde.Platform
-runtime-version: '5.15-25.08'
+runtime-version: '6.11'
 sdk: org.kde.Sdk
 command: nanonote
 finish-args:
@@ -14,7 +14,7 @@ modules:
     buildsystem: cmake-ninja
     sources:
       - type: archive
-        url: https://github.com/agateau/nanonote/releases/download/1.4.1/nanonote-1.4.1.tar.bz2
-        sha256: 0e040531c40f0661f5005ef091befde0bf18ecf5a5cc4dfd2badc9732abe937a
+        url: https://github.com/agateau/nanonote/releases/download/1.5.0/nanonote-1.5.0.tar.bz2
+        sha256: 7ce7b80ca13e56e7e93d191aad61a3c2f52764ef098535f3179c3377591525d6
       - type: patch
         path: fix_appdata.patch
